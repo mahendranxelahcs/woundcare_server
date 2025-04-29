@@ -1,0 +1,73 @@
+You are generating a complete OASIS-E wound assessment using image findings and clinician responses.
+
+Input:
+{
+  "image_analysis": {
+    "wound_type": "Diabetic foot ulcer",
+    "tissue": ["slough", "granulation"],
+    "size": "3.5 × 2.0 × 0.5 cm",
+    "infection": true
+  },
+  "clinician_inputs": {
+    "pain_score": 5,
+    "duration": "3 weeks",
+    "odor": "No",
+    "drainage_amount": "Moderate",
+    "healing_status": "Early/partial healing",
+    "functional_impact": "Affects mobility",
+    "comorbidities": ["Diabetes", "Neuropathy"],
+    "treatment": "NS cleaning and hydrogel dressing"
+  }
+}
+
+Output the final structured analysis as **HTML for web or PDF rendering**:
+
+---
+
+### HTML Output Example:
+
+<div style="font-family: Manrope, 'Noto Sans', sans-serif; color: #1f2937; line-height: 1.6; max-width: 600px; margin: 0 auto; padding: 24px;">
+  <h3 style="font-size: 1.25rem; margin-top: 24px; margin-bottom: 12px; color: #1f4056;">
+    📝 Clinical Summary
+  </h3>
+  <div style="margin-bottom: 16px;">
+    <p style="margin: 6px 0;"><strong>Wound Type:</strong> Diabetic foot ulcer on plantar surface of right foot</p>
+    <p style="margin: 6px 0;"><strong>Size:</strong> 3.5 × 2.0 × 0.5 cm</p>
+    <p style="margin: 6px 0;"><strong>Tissue Observed:</strong> Slough and granulation</p>
+    <p style="margin: 6px 0;"><strong>Drainage:</strong> Moderate, serous</p>
+    <p style="margin: 6px 0;"><strong>Odor:</strong> None</p>
+    <p style="margin: 6px 0;"><strong>Pain Level:</strong> 5/10</p>
+    <p style="margin: 6px 0;"><strong>Wound Duration:</strong> 3 weeks</p>
+    <p style="margin: 6px 0;"><strong>Periwound:</strong> Red, mildly inflamed</p>
+    <p style="margin: 6px 0;"><strong>Comorbidities:</strong> Diabetes, Neuropathy</p>
+  </div>
+
+  <h3 style="font-size: 1.25rem; margin-top: 24px; margin-bottom: 12px; color: #1f4056;">
+    🧠 Functional and Risk Assessment
+  </h3>
+  <div style="margin-bottom: 16px;">
+    <p style="margin: 6px 0;"><strong>Functional Limitation:</strong> Mobility affected by wound pain</p>
+    <p style="margin: 6px 0;"><strong>Risk Factors:</strong> Diabetes, peripheral neuropathy</p>
+  </div>
+
+  <h3 style="font-size: 1.25rem; margin-top: 24px; margin-bottom: 12px; color: #1f4056;">
+    📌 OASIS‑E Coded Fields
+  </h3>
+  <ul style="padding-left: 20px; margin-bottom: 16px;">
+    <li style="margin: 6px 0;"><strong>M1340:</strong> Diabetic foot ulcer</li>
+    <li style="margin: 6px 0;"><strong>M1342:</strong> Response 2 – Early/partial healing</li>
+    <li style="margin: 6px 0;"><strong>M1400:</strong> Pain present</li>
+    <li style="margin: 6px 0;"><strong>M1860:</strong> Requires assistive device for ambulation</li>
+  </ul>
+
+  <h3 style="font-size: 1.25rem; margin-top: 24px; margin-bottom: 12px; color: #1f4056;">
+    🩺 Treatment Plan
+  </h3>
+  <ul style="padding-left: 20px;">
+    <li style="margin: 6px 0;">Cleanse with normal saline</li>
+    <li style="margin: 6px 0;">Apply hydrogel dressing</li>
+    <li style="margin: 6px 0;">Monitor drainage and tissue progress</li>
+    <li style="margin: 6px 0;">SN visit 3×/week</li>
+    <li style="margin: 6px 0;">Reassess in 3 days</li>
+  </ul>
+</div>
