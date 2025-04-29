@@ -48,8 +48,7 @@ app.use("/api", require("./routes/authRoutes"));
 app.use("/api", require("./routes/pdfRoutes"));
 app.use("/api", require("./routes/woundRoutes"));
 
-// const PORT = process.env.PORT || 5000;
-// app.listen(PORT, '0.0.0.0', () => {
-//   console.log("Server running on port 5000");
-// });
-module.exports = app;
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
