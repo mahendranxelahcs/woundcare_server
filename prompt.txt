@@ -93,7 +93,7 @@ You are a home health coding assistant. From the following discharge summary,
   <p><span class="field-label">Address:</span> <span class="field-value">{{Address}}</span><br></p>
   <p><span class="field-label">City:</span> <span class="field-value">{{City}}</span><br></p>
   <p><span class="field-label">State:</span> <span class="field-value">{{State}}</span><br></p>
-  <p><span class="field-label">ZIP:</span> <span class="field-value">{{ZIP}}</span><br></p>
+  <p><span class="field-label">Zip:</span> <span class="field-value">{{Zip}}</span><br></p>
 
   <p><span class="field-label">County:</span> <span class="field-value">{{County}}</span><br></p>
   
@@ -119,7 +119,6 @@ You are a home health coding assistant. From the following discharge summary,
   <p><span class="field-label">State:</span> <span class="field-value">{{EmergencyState}}</span><br></p>
   <p><span class="field-label">ZIP:</span> <span class="field-value">{{EmergencyZIP}}</span><br></p>
 </div>
-
 
 <div class="section">
   <h2>Pharmacy <span class="page-link">Page {{page_pharmacy}}</span></h2>
@@ -183,193 +182,192 @@ You are a home health coding assistant. From the following discharge summary,
 <div class="section">
   <h2>Past Medical History <span class="page-link">Page {{page_history}}</span></h2>
 
-  <p><span class="field-label">CHF (Congestive Heart Failure):</span> <span class="field-value">{{CHF}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Cardiomyopathy:</span> <span class="field-value">{{Cardiomyopathy}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Arrhythmia:</span> <span class="field-value">{{Arrhythmia}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Chest Pain:</span> <span class="field-value">{{ChestPain}} {{true/false}}</span><br></p>
-  <p><span class="field-label">MI (Myocardial Infarction):</span> <span class="field-value">{{MI}} {{true/false}}</span><br></p>
-  <p><span class="field-label">CAD (Coronary Artery Disease):</span> <span class="field-value">{{CAD}} {{true/false}}</span><br></p>
-  <p><span class="field-label">HTN (Hypertension):</span> <span class="field-value">{{HTN}} {{true/false}}</span><br></p>
-  <p><span class="field-label">PVD (Peripheral Vascular Disease):</span> <span class="field-value">{{PVD}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Murmur:</span> <span class="field-value">{{Murmur}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Cancer:</span> <span class="field-value">{{Cancer}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Cancer In Remission - Yes:</span> <span class="field-value">{{CancerInRemission_Y}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Cancer In Remission - No:</span> <span class="field-value">{{CancerInRemission_N}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Osteoarthritis/DJD:</span> <span class="field-value">{{Osteoarthritis_DJD}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Rheumatoid Arthritis:</span> <span class="field-value">{{RheumatoidArthritis}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Gait Problems:</span> <span class="field-value">{{GaitProblems}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Fractures:</span> <span class="field-value">{{Fractures}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Falls:</span> <span class="field-value">{{Falls}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Joint Replacement:</span> <span class="field-value">{{JointReplacement}} {{true/false}}</span><br></p>
-  <p><span class="field-label">CVA (Stroke):</span> <span class="field-value">{{CVA}} {{true/false}}</span><br></p>
-  <p><span class="field-label">TIA (Transient Ischemic Attack):</span> <span class="field-value">{{TIA}} {{true/false}}</span><br></p>
-  <p><span class="field-label">MS (Multiple Sclerosis):</span> <span class="field-value">{{MS}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Hemiplegia:</span> <span class="field-value">{{Hemiplegia}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Seizures:</span> <span class="field-value">{{Seizures}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Headaches:</span> <span class="field-value">{{Headaches}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Dizziness/Vertigo:</span> <span class="field-value">{{DizzinessVertigo}} {{true/false}}</span><br></p>
-  <p><span class="field-label">IBS:</span> <span class="field-value">{{IBS}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Crohn's Disease:</span> <span class="field-value">{{CrohnsDisease}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Diverticulitis/Diverticulosis:</span> <span class="field-value">{{DiverticulitisDiverticulosis}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Constipation:</span> <span class="field-value">{{Constipation}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Diarrhea:</span> <span class="field-value">{{Diarrhea}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Fecal Incontinence:</span> <span class="field-value">{{FecalIncontinence}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Liver/Gallbladder Problems:</span> <span class="field-value">{{LiverGallbladderProblems}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Depression:</span> <span class="field-value">{{Depression}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Anxiety:</span> <span class="field-value">{{Anxiety}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Dementia:</span> <span class="field-value">{{Dementia}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Alzheimer's:</span> <span class="field-value">{{Alzheimers}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Substance Abuse:</span> <span class="field-value">{{SubstanceAbuse}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Mental Disorder:</span> <span class="field-value">{{MentalDisorder}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Pressure Ulcer:</span> <span class="field-value">{{PressureUlcer}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Stasis Ulcer:</span> <span class="field-value">{{StasisUlcer}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Diabetic Ulcer:</span> <span class="field-value">{{DiabeticUlcer}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Trauma Wound:</span> <span class="field-value">{{TraumaWound}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Chronic Kidney Disease:</span> <span class="field-value">{{ChronicKidneyDisease}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Renal Failure:</span> <span class="field-value">{{RenalFailure}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Dialysis:</span> <span class="field-value">{{Dialysis}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Anemia:</span> <span class="field-value">{{Anemia}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Abnormal Coagulation:</span> <span class="field-value">{{AbnormalCoagulation}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Blood Clots:</span> <span class="field-value">{{BloodClots}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Diabetes:</span> <span class="field-value">{{Diabetes}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Thyroid Problems:</span> <span class="field-value">{{ThyroidProblems}} {{true/false}}</span><br></p>
-  <p><span class="field-label">COPD:</span> <span class="field-value">{{COPD}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Asthma:</span> <span class="field-value">{{Asthma}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Chronic Obstructive Bronchitis:</span> <span class="field-value">{{ChronicObstructiveBronchitis}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Emphysema:</span> <span class="field-value">{{Emphysema}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Chronic Obstructive Asthma:</span> <span class="field-value">{{ChronicObstructiveAsthma}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Urinary Incontinence:</span> <span class="field-value">{{UrinaryIncontinence}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Urinary Retention:</span> <span class="field-value">{{UrinaryRetention}} {{true/false}}</span><br></p>
-  <p><span class="field-label">BPH:</span> <span class="field-value">{{BPH}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Recent/Frequent UTI:</span> <span class="field-value">{{RecentFrequentUTI}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Tuberculosis:</span> <span class="field-value">{{Tuberculosis}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Hepatitis:</span> <span class="field-value">{{Hepatitis}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Infectious Disease:</span> <span class="field-value">{{InfectiousDisease}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Tobacco Dependence:</span> <span class="field-value">{{TobaccoDependence}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Vision Problems:</span> <span class="field-value">{{VisionProblems}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Hearing Loss:</span> <span class="field-value">{{HearingLoss}} {{true/false}}</span><br></p>
+  <p><span class="field-label">CHF (Congestive Heart Failure):</span> <span class="field-value">{{CHF}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Cardiomyopathy:</span> <span class="field-value">{{Cardiomyopathy}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Arrhythmia:</span> <span class="field-value">{{Arrhythmia}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Chest Pain:</span> <span class="field-value">{{ChestPain}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">MI (Myocardial Infarction):</span> <span class="field-value">{{MI}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">CAD (Coronary Artery Disease):</span> <span class="field-value">{{CAD}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">HTN (Hypertension):</span> <span class="field-value">{{HTN}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">PVD (Peripheral Vascular Disease):</span> <span class="field-value">{{PVD}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Murmur:</span> <span class="field-value">{{Murmur}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Cancer:</span> <span class="field-value">{{Cancer}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Cancer In Remission:</span> <span class="field-value">{{CancerInRemission}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Osteoarthritis/DJD:</span> <span class="field-value">{{Osteoarthritis_DJD}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Rheumatoid Arthritis:</span> <span class="field-value">{{RheumatoidArthritis}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Gait Problems:</span> <span class="field-value">{{GaitProblems}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Fractures:</span> <span class="field-value">{{Fractures}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Falls:</span> <span class="field-value">{{Falls}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Joint Replacement:</span> <span class="field-value">{{JointReplacement}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">CVA (Stroke):</span> <span class="field-value">{{CVA}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">TIA (Transient Ischemic Attack):</span> <span class="field-value">{{TIA}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">MS (Multiple Sclerosis):</span> <span class="field-value">{{MS}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Hemiplegia:</span> <span class="field-value">{{Hemiplegia}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Seizures:</span> <span class="field-value">{{Seizures}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Headaches:</span> <span class="field-value">{{Headaches}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Dizziness/Vertigo:</span> <span class="field-value">{{DizzinessVertigo}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">IBS:</span> <span class="field-value">{{IBS}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Crohn's Disease:</span> <span class="field-value">{{CrohnsDisease}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Diverticulitis/Diverticulosis:</span> <span class="field-value">{{DiverticulitisDiverticulosis}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Constipation:</span> <span class="field-value">{{Constipation}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Diarrhea:</span> <span class="field-value">{{Diarrhea}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Fecal Incontinence:</span> <span class="field-value">{{FecalIncontinence}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Liver/Gallbladder Problems:</span> <span class="field-value">{{LiverGallbladderProblems}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Depression:</span> <span class="field-value">{{Depression}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Anxiety:</span> <span class="field-value">{{Anxiety}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Dementia:</span> <span class="field-value">{{Dementia}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Alzheimer's:</span> <span class="field-value">{{Alzheimers}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Substance Abuse:</span> <span class="field-value">{{SubstanceAbuse}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Mental Disorder:</span> <span class="field-value">{{MentalDisorder}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Pressure Ulcer:</span> <span class="field-value">{{PressureUlcer}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Stasis Ulcer:</span> <span class="field-value">{{StasisUlcer}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Diabetic Ulcer:</span> <span class="field-value">{{DiabeticUlcer}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Trauma Wound:</span> <span class="field-value">{{TraumaWound}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Chronic Kidney Disease:</span> <span class="field-value">{{ChronicKidneyDisease}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Renal Failure:</span> <span class="field-value">{{RenalFailure}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Dialysis:</span> <span class="field-value">{{Dialysis}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Anemia:</span> <span class="field-value">{{Anemia}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Abnormal Coagulation:</span> <span class="field-value">{{AbnormalCoagulation}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Blood Clots:</span> <span class="field-value">{{BloodClots}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Diabetes:</span> <span class="field-value">{{Diabetes}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Thyroid Problems:</span> <span class="field-value">{{ThyroidProblems}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">COPD:</span> <span class="field-value">{{COPD}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Asthma:</span> <span class="field-value">{{Asthma}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Chronic Obstructive Bronchitis:</span> <span class="field-value">{{ChronicObstructiveBronchitis}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Emphysema:</span> <span class="field-value">{{Emphysema}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Chronic Obstructive Asthma:</span> <span class="field-value">{{ChronicObstructiveAsthma}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Urinary Incontinence:</span> <span class="field-value">{{UrinaryIncontinence}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Urinary Retention:</span> <span class="field-value">{{UrinaryRetention}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">BPH:</span> <span class="field-value">{{BPH}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Recent/Frequent UTI:</span> <span class="field-value">{{RecentFrequentUTI}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Tuberculosis:</span> <span class="field-value">{{Tuberculosis}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Hepatitis:</span> <span class="field-value">{{Hepatitis}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Infectious Disease:</span> <span class="field-value">{{InfectiousDisease}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Tobacco Dependence:</span> <span class="field-value">{{TobaccoDependence}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Vision Problems:</span> <span class="field-value">{{VisionProblems}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Hearing Loss:</span> <span class="field-value">{{HearingLoss}} {{Yes/No}}</span><br></p>
 </div>
 <div class="section">
   <h2>Homebound Assessment <span class="page-link">Page {{page_homebound}}</span></h2>
 
-  <p><span class="field-label">Is the patient homebound?</span> <span class="field-value">{{HomeboundStatus}} {{true/false}}</span><br></p>
+  <p><span class="field-label">Is the patient homebound?</span> <span class="field-value">{{HomeboundStatus}} {{Yes/No}}</span><br></p>
 
   <p><span class="field-label">Criteria One:</span><br></p>
-  <p><span class="field-label">Confined Due To Illness:</span> <span class="field-value">{{ConfinedDueToIllness}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Medically Contraindicated To Leave Home:</span> <span class="field-value">{{MedicallyContraindicatedToLeaveHome}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Specify:</span> <span class="field-value">{{CriteriaOneSpecify}}</span><br></p>
+  <p><span class="field-label">Confined Due To Illness:</span> <span class="field-value">{{ConfinedDueToIllness}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Medically Contraindicated To Leave Home:</span> <span class="field-value">{{MedicallyContraindicatedToLeaveHome}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Specify(Criteria1):</span> <span class="field-value">{{CriteriaOneSpecify}}</span><br></p>
 
   <p><span class="field-label">Criteria Two:</span><br></p>
-  <p><span class="field-label">Normal Inability To Leave Home:</span> <span class="field-value">{{NormalInabilityToLeaveHome}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Leaving Home Is A Taxing Effort:</span> <span class="field-value">{{LeavingHomeIsTaxingEffort}} {{true/false}}</span><br></p>
-  <p><span class="field-label">Specify:</span> <span class="field-value">{{CriteriaTwoSpecify}}</span><br></p>
+  <p><span class="field-label">Normal Inability To Leave Home:</span> <span class="field-value">{{NormalInabilityToLeaveHome}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Leaving Home Is A Taxing Effort:</span> <span class="field-value">{{LeavingHomeIsTaxingEffort}} {{Yes/No}}</span><br></p>
+  <p><span class="field-label">Specify(Criteria2):</span> <span class="field-value">{{CriteriaTwoSpecify}}</span><br></p>
 </div>
   
 <div class="section">
   <h2>Prognosis <span class="page-link">Page {{page_prognosis}}</span></h2>
   
-  <p><span class="field-label">Guarded:</span> <span class="field-value">{{PrognosisGuarded}} {true/false}</span><br></p>
-  <p><span class="field-label">Poor:</span> <span class="field-value">{{PrognosisPoor}} {true/false}</span><br></p>
-  <p><span class="field-label">Good:</span> <span class="field-value">{{PrognosisGood}} {true/false}</span><br></p>
+  <p><span class="field-label">Guarded:</span> <span class="field-value">{{PrognosisGuarded}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Poor:</span> <span class="field-value">{{PrognosisPoor}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Good:</span> <span class="field-value">{{PrognosisGood}} {Yes/No}</span><br></p>
 </div>
 
 <div class="section">
   <h2>Functional Limitations <span class="page-link">Page {{page_functional_limitations}}</span></h2>
 
-  <p><span class="field-label">Amputation:</span> <span class="field-value">{{Amputation}} {true/false}</span><br></p>
-  <p><span class="field-label">Paralysis:</span> <span class="field-value">{{Paralysis}} {true/false}</span><br></p>
-  <p><span class="field-label">Legally Blind:</span> <span class="field-value">{{LegallyBlind}} {true/false}</span><br></p>
-  <p><span class="field-label">Bowel/Bladder Incontinence:</span> <span class="field-value">{{BowelBladderIncontinence}} {true/false}</span><br></p>
-  <p><span class="field-label">Endurance:</span> <span class="field-value">{{Endurance}} {true/false}</span><br></p>
-  <p><span class="field-label">Dyspnea:</span> <span class="field-value">{{Dyspnea}} {true/false}</span><br></p>
-  <p><span class="field-label">Contracture:</span> <span class="field-value">{{Contracture}} {true/false}</span><br></p>
-  <p><span class="field-label">Ambulation:</span> <span class="field-value">{{Ambulation}} {true/false}</span><br></p>
-  <p><span class="field-label">Hearing:</span> <span class="field-value">{{Hearing}} {true/false}</span><br></p>
-  <p><span class="field-label">Speech:</span> <span class="field-value">{{Speech}} {true/false}</span><br></p>
+  <p><span class="field-label">Amputation:</span> <span class="field-value">{{Amputation}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Paralysis:</span> <span class="field-value">{{Paralysis}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Legally Blind:</span> <span class="field-value">{{LegallyBlind}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Bowel/Bladder Incontinence:</span> <span class="field-value">{{BowelBladderIncontinence}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Endurance:</span> <span class="field-value">{{Endurance}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Dyspnea:</span> <span class="field-value">{{Dyspnea}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Contracture:</span> <span class="field-value">{{Contracture}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Ambulation:</span> <span class="field-value">{{Ambulation}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hearing:</span> <span class="field-value">{{Hearing}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Speech:</span> <span class="field-value">{{Speech}} {Yes/No}</span><br></p>
 </div>
 
 <div class="section">
   <h2>Hearing, Speech, and Vision <span class="page-link">Page {{page_sensory}}</span></h2>
 
-  <p><b><span class="field-label">Eyes:</span></b><br></p>
-  <p><span class="field-label">WNL:</span> <span class="field-value">{{EyesWNL}} {true/false}</span><br></p>
-  <p><span class="field-label">Glasses:</span> <span class="field-value">{{Glasses}} {true/false}</span><br></p>
-  <p><span class="field-label">Contacts (Left):</span> <span class="field-value">{{ContactsLeft}} {true/false}</span><br></p>
-  <p><span class="field-label">Contacts (Right):</span> <span class="field-value">{{ContactsRight}} {true/false}</span><br></p>
-  <p><span class="field-label">Blurred Vision:</span> <span class="field-value">{{BlurredVision}} {true/false}</span><br></p>
-  <p><span class="field-label">Glaucoma:</span> <span class="field-value">{{Glaucoma}} {true/false}</span><br></p>
-  <p><span class="field-label">Cataracts:</span> <span class="field-value">{{Cataracts}} {true/false}</span><br></p>
-  <p><span class="field-label">Macular Degeneration:</span> <span class="field-value">{{MacularDegeneration}} {true/false}</span><br></p>
-  <p><span class="field-label">Redness:</span> <span class="field-value">{{Redness}} {true/false}</span><br></p>
-  <p><span class="field-label">Drainage:</span> <span class="field-value">{{EyeDrainage}} {true/false}</span><br></p>
-  <p><span class="field-label">Itching:</span> <span class="field-value">{{Itching}} {true/false}</span><br></p>
-  <p><span class="field-label">Watering:</span> <span class="field-value">{{Watering}} {true/false}</span><br></p>
+  <p><b>Eyes</b><br></p>
+  <p><span class="field-label">WNL(Eyes):</span> <span class="field-value">{{EyesWNL}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Glasses:</span> <span class="field-value">{{Glasses}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Contacts (Left):</span> <span class="field-value">{{ContactsLeft}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Contacts (Right):</span> <span class="field-value">{{ContactsRight}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Blurred Vision:</span> <span class="field-value">{{BlurredVision}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Glaucoma:</span> <span class="field-value">{{Glaucoma}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Cataracts:</span> <span class="field-value">{{Cataracts}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Macular Degeneration:</span> <span class="field-value">{{MacularDegeneration}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Redness:</span> <span class="field-value">{{Redness}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Drainage(Eyes):</span> <span class="field-value">{{EyeDrainage}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Itching:</span> <span class="field-value">{{Itching}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Watering:</span> <span class="field-value">{{Watering}} {Yes/No}</span><br></p>
   <p><span class="field-label">Date of Last Eye Exam:</span> <span class="field-value">{{DateOfLastEyeExam}}</span><br></p><br />
 
-  <p><b><span class="field-label">Ears:</span></b><br></p>
-  <p><span class="field-label">WNL:</span> <span class="field-value">{{EarsWNL}} {true/false}</span><br></p>
-  <p><span class="field-label">Hearing Impaired (Status):</span> <span class="field-value">{{HearingImpairedStatus}} {true/false}</span><br></p>
-  <p><span class="field-label">Hearing Impaired Left:</span> <span class="field-value">{{HearingImpairedLeft}} {true/false}</span><br></p>
-  <p><span class="field-label">Hearing Impaired Right:</span> <span class="field-value">{{HearingImpairedRight}} {true/false}</span><br></p>
-  <p><span class="field-label">Deaf:</span> <span class="field-value">{{Deaf}} {true/false}</span><br></p>
-  <p><span class="field-label">Drainage:</span> <span class="field-value">{{EarDrainage}} {true/false}</span><br></p>
-  <p><span class="field-label">Pain:</span> <span class="field-value">{{EarPain}} {true/false}</span><br></p>
-  <p><span class="field-label">Hearing Aids (Status):</span> <span class="field-value">{{HearingAidsStatus}} {true/false}</span><br></p>
-  <p><span class="field-label">Hearing Aid Left:</span> <span class="field-value">{{HearingAidLeft}} {true/false}</span><br></p>
-  <p><span class="field-label">Hearing Aid Right:</span> <span class="field-value">{{HearingAidRight}} {true/false}</span><br></p><br />
+  <p><b>Ears</b><br></p>
+  <p><span class="field-label">WNL(Ears):</span> <span class="field-value">{{EarsWNL}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hearing Impaired (Status):</span> <span class="field-value">{{HearingImpairedStatus}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hearing Impaired Left:</span> <span class="field-value">{{HearingImpairedLeft}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hearing Impaired Right:</span> <span class="field-value">{{HearingImpairedRight}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Deaf:</span> <span class="field-value">{{Deaf}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Drainage(Ears):</span> <span class="field-value">{{EarDrainage}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Pain:</span> <span class="field-value">{{EarPain}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hearing Aids (Status):</span> <span class="field-value">{{HearingAidsStatus}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hearing Aid Left:</span> <span class="field-value">{{HearingAidLeft}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hearing Aid Right:</span> <span class="field-value">{{HearingAidRight}} {Yes/No}</span><br></p><br />
 
-  <p><b><span class="field-label">Nose:</span></b><br></p>
-  <p><span class="field-label">WNL:</span> <span class="field-value">{{NoseWNL}} {true/false}</span><br></p>
-  <p><span class="field-label">Congestion:</span> <span class="field-value">{{Congestion}} {true/false}</span><br></p>
-  <p><span class="field-label">Loss of Smell:</span> <span class="field-value">{{LossOfSmell}} {true/false}</span><br></p>
-  <p><span class="field-label">Nosebleeds:</span> <span class="field-value">{{NoseBleedsStatus}} {true/false}</span><br></p>
+  <p><b>Nose</b><br></p>
+  <p><span class="field-label">WNL(Nose):</span> <span class="field-value">{{NoseWNL}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Congestion:</span> <span class="field-value">{{Congestion}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Loss of Smell:</span> <span class="field-value">{{LossOfSmell}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Nosebleeds:</span> <span class="field-value">{{NoseBleedsStatus}} {Yes/No}</span><br></p>
   <p><span class="field-label">How Often:</span> <span class="field-value">{{NoseBleedsHowOften}}</span><br></p>
 </div>
 <div class="section">
   <h2>Cognitive, Mood, and Behavior <span class="page-link">Page {{page_cognitive}}</span></h2>
 
-  <p><b><span class="field-label">Mental Status (Memory):</span></b><br></p>
-  <p><span class="field-label">No Problems:</span> <span class="field-value">{{MemoryNoProblems}} {true/false}</span><br></p>
-  <p><span class="field-label">Forgetful:</span> <span class="field-value">{{Forgetful}} {true/false}</span><br></p>
-  <p><span class="field-label">Misplaces Objects:</span> <span class="field-value">{{MisplacesObjects}} {true/false}</span><br></p>
-  <p><span class="field-label">Short Term Loss:</span> <span class="field-value">{{ShortTermLoss}} {true/false}</span><br></p>
-  <p><span class="field-label">Long Term Loss:</span> <span class="field-value">{{LongTermLoss}} {true/false}</span><br></p><br />
+  <p><b>Mental Status (Memory)</b><br></p>
+  <p><span class="field-label">No Problems:</span> <span class="field-value">{{MemoryNoProblems}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Forgetful:</span> <span class="field-value">{{Forgetful}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Misplaces Objects:</span> <span class="field-value">{{MisplacesObjects}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Short Term Loss:</span> <span class="field-value">{{ShortTermLoss}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Long Term Loss:</span> <span class="field-value">{{LongTermLoss}} {Yes/No}</span><br></p><br />
 
-  <p><b><span class="field-label">Neurological:</span></b><br></p>
-  <p><span class="field-label">No Problems:</span> <span class="field-value">{{NeuroNoProblems}} {true/false}</span><br></p>
-  <p><span class="field-label">Seizures:</span> <span class="field-value">{{NeuroSeizures}} {true/false}</span><br></p>
-  <p><span class="field-label">Aphasic:</span> <span class="field-value">{{Aphasic}} {true/false}</span><br></p>
-  <p><span class="field-label">Headaches:</span> <span class="field-value">{{NeuroHeadaches}} {true/false}</span><br></p>
-  <p><span class="field-label">Spasms:</span> <span class="field-value">{{Spasms}} {true/false}</span><br></p>
-  <p><span class="field-label">Tremors:</span> <span class="field-value">{{Tremors}} {true/false}</span><br></p>
+  <p><b>Neurological</b><br></p>
+  <p><span class="field-label">No Problems:</span> <span class="field-value">{{NeuroNoProblems}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Seizures:</span> <span class="field-value">{{NeuroSeizures}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Aphasic:</span> <span class="field-value">{{Aphasic}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Headaches:</span> <span class="field-value">{{NeuroHeadaches}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Spasms:</span> <span class="field-value">{{Spasms}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Tremors:</span> <span class="field-value">{{Tremors}} {Yes/No}</span><br></p>
 </div>
 
 <div class="section">
   <h2>Environmental Safety Measures <span class="page-link">Page {{page_safety}}</span></h2>
 
-  <p><span class="field-label">Anticoagulant Precautions:</span> <span class="field-value">{{AnticoagulantPrecautions}} {true/false}</span><br></p>
-  <p><span class="field-label">Emergency Plan Developed:</span> <span class="field-value">{{EmergencyPlanDeveloped}} {true/false}</span><br></p>
-  <p><span class="field-label">Fall Precautions:</span> <span class="field-value">{{FallPrecautions}} {true/false}</span><br></p>
-  <p><span class="field-label">Keep Pathway Clear:</span> <span class="field-value">{{KeepPathwayClear}} {true/false}</span><br></p>
-  <p><span class="field-label">Keep Side Rails Up:</span> <span class="field-value">{{KeepSideRailsUp}} {true/false}</span><br></p>
-  <p><span class="field-label">Neutropenic Precautions:</span> <span class="field-value">{{NeutropenicPrecautions}} {true/false}</span><br></p>
-  <p><span class="field-label">O2 Precautions:</span> <span class="field-value">{{O2Precautions}} {true/false}</span><br></p>
-  <p><span class="field-label">Proper Position During Meals:</span> <span class="field-value">{{ProperPositionDuringMeals}} {true/false}</span><br></p>
-  <p><span class="field-label">Safety in ADLs:</span> <span class="field-value">{{SafetyInADLs}} {true/false}</span><br></p>
-  <p><span class="field-label">Seizure Precautions:</span> <span class="field-value">{{SeizurePrecautions}} {true/false}</span><br></p>
-  <p><span class="field-label">Sharps Safety:</span> <span class="field-value">{{SharpsSafety}} {true/false}</span><br></p>
-  <p><span class="field-label">Slow Position Change:</span> <span class="field-value">{{SlowPositionChange}} {true/false}</span><br></p>
-  <p><span class="field-label">Standard Precautions/Infection Control:</span> <span class="field-value">{{StandardPrecautions}} {true/false}</span><br></p>
-  <p><span class="field-label">Support During Transfer and Ambulation:</span> <span class="field-value">{{SupportDuringTransferAndAmbulation}} {true/false}</span><br></p>
-  <p><span class="field-label">Use of Assistive Devices:</span> <span class="field-value">{{UseOfAssistiveDevices}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on safe utilities management:</span> <span class="field-value">{{SafeUtilitiesInstruction}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on mobility safety:</span> <span class="field-value">{{MobilitySafetyInstruction}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on DME & electrical safety:</span> <span class="field-value">{{DMEElectricalSafetyInstruction}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on sharps container:</span> <span class="field-value">{{SharpsContainerInstruction}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on medical gas:</span> <span class="field-value">{{MedicalGasInstruction}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on disaster/emergency plan:</span> <span class="field-value">{{DisasterPlanInstruction}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on safety measures:</span> <span class="field-value">{{GeneralSafetyInstruction}} {true/false}</span><br></p>
-  <p><span class="field-label">Instructed on proper handling of biohazard waste:</span> <span class="field-value">{{BiohazardWasteInstruction}} {true/false}</span><br></p>
+  <p><span class="field-label">Anticoagulant Precautions:</span> <span class="field-value">{{AnticoagulantPrecautions}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Emergency Plan Developed:</span> <span class="field-value">{{EmergencyPlanDeveloped}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Fall Precautions:</span> <span class="field-value">{{FallPrecautions}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Keep Pathway Clear:</span> <span class="field-value">{{KeepPathwayClear}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Keep Side Rails Up:</span> <span class="field-value">{{KeepSideRailsUp}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Neutropenic Precautions:</span> <span class="field-value">{{NeutropenicPrecautions}} {Yes/No}</span><br></p>
+  <p><span class="field-label">O2 Precautions:</span> <span class="field-value">{{O2Precautions}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Proper Position During Meals:</span> <span class="field-value">{{ProperPositionDuringMeals}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Safety in ADLs:</span> <span class="field-value">{{SafetyInADLs}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Seizure Precautions:</span> <span class="field-value">{{SeizurePrecautions}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Sharps Safety:</span> <span class="field-value">{{SharpsSafety}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Slow Position Change:</span> <span class="field-value">{{SlowPositionChange}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Standard Precautions/Infection Control:</span> <span class="field-value">{{StandardPrecautions}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Support During Transfer and Ambulation:</span> <span class="field-value">{{SupportDuringTransferAndAmbulation}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Use of Assistive Devices:</span> <span class="field-value">{{UseOfAssistiveDevices}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on safe utilities management:</span> <span class="field-value">{{SafeUtilitiesInstruction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on mobility safety:</span> <span class="field-value">{{MobilitySafetyInstruction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on DME & electrical safety:</span> <span class="field-value">{{DMEElectricalSafetyInstruction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on sharps container:</span> <span class="field-value">{{SharpsContainerInstruction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on medical gas:</span> <span class="field-value">{{MedicalGasInstruction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on disaster/emergency plan:</span> <span class="field-value">{{DisasterPlanInstruction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on safety measures:</span> <span class="field-value">{{GeneralSafetyInstruction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Instructed on proper handling of biohazard waste:</span> <span class="field-value">{{BiohazardWasteInstruction}} {Yes/No}</span><br></p>
 
   <p><span class="field-label">Triage/Risk Code:</span> <span class="field-value">{{TriageRiskCode}}</span><br></p>
   <p><span class="field-label">Disaster Code:</span> <span class="field-value">{{DisasterCode}}</span><br></p>
@@ -378,64 +376,64 @@ You are a home health coding assistant. From the following discharge summary,
 <div class="section">
   <h2>Functional Status <span class="page-link">Page {{page_functional_status}}</span></h2>
 
-  <p><b>Activities Permitted:</b><br></p>
-  <p><span class="field-label">Complete bed rest:</span> <span class="field-value">{{CompleteBedRest}} {true/false}</span><br></p>
-  <p><span class="field-label">Up as tolerated:</span> <span class="field-value">{{UpAsTolerated}} {true/false}</span><br></p>
-  <p><span class="field-label">Exercise prescribed:</span> <span class="field-value">{{ExercisePrescribed}} {true/false}</span><br></p>
-  <p><span class="field-label">Independent at home:</span> <span class="field-value">{{IndependentAtHome}} {true/false}</span><br></p>
-  <p><span class="field-label">Cane:</span> <span class="field-value">{{CanePermitted}} {true/false}</span><br></p>
-  <p><span class="field-label">Walker:</span> <span class="field-value">{{WalkerPermitted}} {true/false}</span><br></p>
-  <p><span class="field-label">Bed rest with BRP:</span> <span class="field-value">{{BedRestWithBRP}} {true/false}</span><br></p>
-  <p><span class="field-label">Transfer bed-chair:</span> <span class="field-value">{{TransferBedChair}} {true/false}</span><br></p>
-  <p><span class="field-label">Partial weight bearing:</span> <span class="field-value">{{PartialWeightBearing}} {true/false}</span><br></p>
-  <p><span class="field-label">Crutches:</span> <span class="field-value">{{Crutches}} {true/false}</span><br></p>
-  <p><span class="field-label">Wheelchair:</span> <span class="field-value">{{WheelchairPermitted}} {true/false}</span><br></p>
+  <p><b>Activities Permitted</b><br></p>
+  <p><span class="field-label">Complete bed rest:</span> <span class="field-value">{{CompleteBedRest}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Up as tolerated:</span> <span class="field-value">{{UpAsTolerated}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Exercise prescribed:</span> <span class="field-value">{{ExercisePrescribed}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Independent at home:</span> <span class="field-value">{{IndependentAtHome}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Cane:</span> <span class="field-value">{{CanePermitted}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Walker:</span> <span class="field-value">{{WalkerPermitted}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Bed rest with BRP:</span> <span class="field-value">{{BedRestWithBRP}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Transfer bed-chair:</span> <span class="field-value">{{TransferBedChair}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Partial weight bearing:</span> <span class="field-value">{{PartialWeightBearing}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Crutches:</span> <span class="field-value">{{Crutches}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Wheelchair:</span> <span class="field-value">{{WheelchairPermitted}} {Yes/No}</span><br></p>
   <p><span class="field-label">Other (specify):</span> <span class="field-value">{{OtherActivitiesPermitted}}</span><br></p><br />
 
-  <p><b>Musculoskeletal:</b><br></p>
-  <p><span class="field-label">WNL:</span> <span class="field-value">{{MusculoskeletalWNL}} {true/false}</span><br></p>
-  <p><span class="field-label">Weakness:</span> <span class="field-value">{{Weakness}} {true/false}</span><br></p>
-  <p><span class="field-label">Ambulation Difficulty:</span> <span class="field-value">{{AmbulationDifficulty}} {true/false}</span><br></p>
-  <p><span class="field-label">Limited Mobility/ROM:</span> <span class="field-value">{{LimitedMobilityROMSelected}} {true/false}</span>, Location: <span class="field-value">{{LimitedMobilityROMLocation}}</span><br></p>
-  <p><span class="field-label">Joint Pain/Stiffness:</span> <span class="field-value">{{JointPainStiffnessSelected}} {true/false}</span>, Location: <span class="field-value">{{JointPainStiffnessLocation}}</span><br></p>
-  <p><span class="field-label">Poor Balance:</span> <span class="field-value">{{PoorBalance}} {true/false}</span><br></p>
-  <p><span class="field-label">Grip Strength Equal:</span> <span class="field-value">{{GripStrengthEqual}} {true/false}</span><br></p>
-  <p><span class="field-label">Grip Strength Unequal:</span> <span class="field-value">{{GripStrengthUnequal}} {true/false}</span><br></p>
-  <p><span class="field-label">Bedbound:</span> <span class="field-value">{{Bedbound}} {true/false}</span><br></p>
-  <p><span class="field-label">Chairbound:</span> <span class="field-value">{{Chairbound}} {true/false}</span><br></p>
-  <p><span class="field-label">Contracture:</span> <span class="field-value">{{ContractureSelected}} {true/false}</span>, Location: <span class="field-value">{{ContractureLocation}}</span><br></p>
-  <p><span class="field-label">Paralysis:</span> <span class="field-value">{{ParalysisSelected}} {true/false}</span>, Location: <span class="field-value">{{ParalysisLocation}}</span>, Dominant: <span class="field-value">{{ParalysisDominant}} {true/false}</span>, Nondominant: <span class="field-value">{{ParalysisNondominant}} {true/false}</span><br></p>
-  <p><span class="field-label">Assistive Device:</span> <span class="field-value">{{AssistiveDeviceSelected}} {true/false}</span>, Type: <span class="field-value">{{AssistiveDeviceType}}</span><br></p>
+  <p><b>Musculoskeletal</b><br></p>
+  <p><span class="field-label">WNL:</span> <span class="field-value">{{MusculoskeletalWNL}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Weakness:</span> <span class="field-value">{{Weakness}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Ambulation Difficulty:</span> <span class="field-value">{{AmbulationDifficulty}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Limited Mobility/ROM:</span> <span class="field-value">{{LimitedMobilityROMSelected}} {Yes/No}</span>, Location: <span class="field-value">{{LimitedMobilityROMLocation}}</span><br></p>
+  <p><span class="field-label">Joint Pain/Stiffness:</span> <span class="field-value">{{JointPainStiffnessSelected}} {Yes/No}</span>, Location: <span class="field-value">{{JointPainStiffnessLocation}}</span><br></p>
+  <p><span class="field-label">Poor Balance:</span> <span class="field-value">{{PoorBalance}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Grip Strength Equal:</span> <span class="field-value">{{GripStrengthEqual}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Grip Strength Unequal:</span> <span class="field-value">{{GripStrengthUnequal}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Bedbound:</span> <span class="field-value">{{Bedbound}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Chairbound:</span> <span class="field-value">{{Chairbound}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Contracture:</span> <span class="field-value">{{ContractureSelected}} {Yes/No}</span>, Location: <span class="field-value">{{ContractureLocation}}</span><br></p>
+  <p><span class="field-label">Paralysis:</span> <span class="field-value">{{ParalysisSelected}} {Yes/No}</span>, Location: <span class="field-value">{{ParalysisLocation}}</span>, Dominant: <span class="field-value">{{ParalysisDominant}} {Yes/No}</span>, Nondominant: <span class="field-value">{{ParalysisNondominant}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Assistive Device:</span> <span class="field-value">{{AssistiveDeviceSelected}} {Yes/No}</span>, Type: <span class="field-value">{{AssistiveDeviceType}}</span><br></p>
   <p><span class="field-label">Comments:</span> <span class="field-value">{{MusculoskeletalComments}}</span><br></p><br />
 
-  <p><b>MAHC 10 - Fall Risk Assessment Tool:</b><br></p>
-  <p><span class="field-label">Age 65+:</span> <span class="field-value">{{FallRiskAge}} {true/false}</span><br></p>
-  <p><span class="field-label">Diagnosis (3 or more co-existing):</span> <span class="field-value">{{FallRiskDiagnosis}} {true/false}</span><br></p>
-  <p><span class="field-label">Prior history of falls within 3 months:</span> <span class="field-value">{{FallRiskHistory}} {true/false}</span><br></p>
-  <p><span class="field-label">Incontinence:</span> <span class="field-value">{{FallRiskIncontinence}} {true/false}</span><br></p>
-  <p><span class="field-label">Visual impairment:</span> <span class="field-value">{{FallRiskVisual}} {true/false}</span><br></p>
-  <p><span class="field-label">Impaired functional mobility:</span> <span class="field-value">{{FallRiskMobility}} {true/false}</span><br></p>
-  <p><span class="field-label">Environmental hazards:</span> <span class="field-value">{{FallRiskEnvironment}} {true/false}</span><br></p>
-  <p><span class="field-label">Poly Pharmacy:</span> <span class="field-value">{{FallRiskPolyPharmacy}} {true/false}</span><br></p>
-  <p><span class="field-label">Pain affecting function:</span> <span class="field-value">{{FallRiskPain}} {true/false}</span><br></p>
-  <p><span class="field-label">Cognitive impairment:</span> <span class="field-value">{{FallRiskCognitive}} {true/false}</span><br></p><br />
+  <p><b>MAHC 10 - Fall Risk Assessment Tool</b><br></p>
+  <p><span class="field-label">Age 65+:</span> <span class="field-value">{{FallRiskAge}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Diagnosis (3 or more co-existing):</span> <span class="field-value">{{FallRiskDiagnosis}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Prior history of falls within 3 months:</span> <span class="field-value">{{FallRiskHistory}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Incontinence:</span> <span class="field-value">{{FallRiskIncontinence}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Visual impairment:</span> <span class="field-value">{{FallRiskVisual}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Impaired functional mobility:</span> <span class="field-value">{{FallRiskMobility}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Environmental hazards:</span> <span class="field-value">{{FallRiskEnvironment}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Poly Pharmacy:</span> <span class="field-value">{{FallRiskPolyPharmacy}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Pain affecting function:</span> <span class="field-value">{{FallRiskPain}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Cognitive impairment:</span> <span class="field-value">{{FallRiskCognitive}} {Yes/No}</span><br></p><br />
 
-  <p><b>DME:</b><br></p>
-  <p><span class="field-label">Bedside Commode:</span> <span class="field-value">{{DMEBedsideCommode}} {true/false}</span><br></p>
-  <p><span class="field-label">Cane:</span> <span class="field-value">{{DMECane}} {true/false}</span><br></p>
-  <p><span class="field-label">Elevated Toilet Seat:</span> <span class="field-value">{{DMEElevatedToiletSeat}} {true/false}</span><br></p>
-  <p><span class="field-label">Grab Bars:</span> <span class="field-value">{{DMEGrabBars}} {true/false}</span><br></p>
-  <p><span class="field-label">Hospital Bed:</span> <span class="field-value">{{DMEHospitalBed}} {true/false}</span><br></p>
-  <p><span class="field-label">Nebulizer:</span> <span class="field-value">{{DMENebulizer}} {true/false}</span><br></p>
-  <p><span class="field-label">Oxygen:</span> <span class="field-value">{{DMEOxygen}} {true/false}</span><br></p>
-  <p><span class="field-label">Tub/Shower Bench:</span> <span class="field-value">{{DMETubShowerBench}} {true/false}</span><br></p>
-  <p><span class="field-label">Walker:</span> <span class="field-value">{{DMEWalker}} {true/false}</span><br></p>
-  <p><span class="field-label">Wheelchair:</span> <span class="field-value">{{DMEWheelchair}} {true/false}</span><br></p>
+  <p><b>DME</b><br></p>
+  <p><span class="field-label">Bedside Commode:</span> <span class="field-value">{{DMEBedsideCommode}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Cane:</span> <span class="field-value">{{DMECane}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Elevated Toilet Seat:</span> <span class="field-value">{{DMEElevatedToiletSeat}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Grab Bars:</span> <span class="field-value">{{DMEGrabBars}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hospital Bed:</span> <span class="field-value">{{DMEHospitalBed}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Nebulizer:</span> <span class="field-value">{{DMENebulizer}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Oxygen:</span> <span class="field-value">{{DMEOxygen}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Tub/Shower Bench:</span> <span class="field-value">{{DMETubShowerBench}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Walker:</span> <span class="field-value">{{DMEWalker}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Wheelchair:</span> <span class="field-value">{{DMEWheelchair}} {Yes/No}</span><br></p>
 </div>
 <div class="section">
   <h2>Functional Abilities <span class="page-link">Page {{page_functional_abilities}}</span></h2>
 
-  <p><b>GG0100 – Prior Functioning:</b><br></p>
+  <p><b>GG0100 – Prior Functioning</b><br></p>
   <p><span class="field-label">Self Care:</span> <span class="field-value">{{A_SelfCare}} (code)</span><br></p>
   <p><span class="field-label">Indoor Mobility/Ambulation:</span> <span class="field-value">{{B_IndoorMobilityAmbulation}} (code)</span><br></p>
   <p><span class="field-label">Stairs:</span> <span class="field-value">{{C_Stairs}} (code)</span><br></p>
@@ -444,99 +442,99 @@ You are a home health coding assistant. From the following discharge summary,
   <p><b>Legend:</b> <span class="field-value">{{legend}}</span><br></p>
   <p><small class="nodata">(Options: 3 – Independent, 2 – Needed Some Help, 1 – Dependent, 8 – Unknown, 9 – Not Applicable, - – Not Assessed/No Information)</small><br></p> <br />
 
-  <p><b>GG0110 – Prior Device Use:</b><br></p>
-  <p><span class="field-label">Manual Wheelchair:</span> <span class="field-value">{{A_ManualWheelchair}} {true/false}</span><br></p>
-  <p><span class="field-label">Motorized Wheelchair or Scooter:</span> <span class="field-value">{{B_MotorizedWheelchairOrScooter}} {true/false}</span><br></p>
-  <p><span class="field-label">Mechanical Lift:</span> <span class="field-value">{{C_MechanicalLift}} {true/false}</span><br></p>
-  <p><span class="field-label">Walker:</span> <span class="field-value">{{D_Walker}} {true/false}</span><br></p>
-  <p><span class="field-label">Orthotics/Prosthetics:</span> <span class="field-value">{{E_OrthoticsProsthetics}} {true/false}</span><br></p>
-  <p><span class="field-label">None of the Above:</span> <span class="field-value">{{Z_NoneOfTheAbove}} {true/false}</span><br></p>
-  <p><span class="field-label">Not Assessed/No Information:</span> <span class="field-value">{{NotAssessedNoInformation}} {true/false}</span><br></p>
+  <p><b>GG0110 – Prior Device Use</b><br></p>
+  <p><span class="field-label">Manual Wheelchair:</span> <span class="field-value">{{A_ManualWheelchair}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Motorized Wheelchair or Scooter:</span> <span class="field-value">{{B_MotorizedWheelchairOrScooter}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Mechanical Lift:</span> <span class="field-value">{{C_MechanicalLift}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Walker:</span> <span class="field-value">{{D_Walker}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Orthotics/Prosthetics:</span> <span class="field-value">{{E_OrthoticsProsthetics}} {Yes/No}</span><br></p>
+  <p><span class="field-label">None of Prior Device Use:</span> <span class="field-value">{{Z_NoneOfTheAbove}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Not Assessed/No Information:</span> <span class="field-value">{{NotAssessedNoInformation}} {Yes/No}</span><br></p>
 </div>
 
 
 <div class="section">
   <h2>Bladder and Bowel <span class="page-link">Page {{page_bladder_bowel}}</span></h2>
 
-  <p><b>Genitourinary (GU) Status:</b><br></p>
-  <p><span class="field-label">WNL:</span> <span class="field-value">{{GU_WNL}} {true/false}</span><br></p>
-  <p><span class="field-label">Incontinence:</span> <span class="field-value">{{GU_Incontinence}} {true/false}</span><br></p>
-  <p><span class="field-label">Bladder Distention:</span> <span class="field-value">{{GU_BladderDistention}} {true/false}</span><br></p>
-  <p><span class="field-label">Burning:</span> <span class="field-value">{{GU_Burning}} {true/false}</span><br></p>
-  <p><span class="field-label">Frequency:</span> <span class="field-value">{{GU_Frequency}} {true/false}</span><br></p>
-  <p><span class="field-label">Dysuria:</span> <span class="field-value">{{GU_Dysuria}} {true/false}</span><br></p>
-  <p><span class="field-label">Retention:</span> <span class="field-value">{{GU_Retention}} {true/false}</span><br></p>
-  <p><span class="field-label">Urgency:</span> <span class="field-value">{{GU_Urgency}} {true/false}</span><br></p>
-  <p><span class="field-label">Urostomy:</span> <span class="field-value">{{GU_Urostomy}} {true/false}</span><br></p><br />
+  <p><b>Genitourinary (GU) Status</b><br></p>
+  <p><span class="field-label">WNL:</span> <span class="field-value">{{GU_WNL}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Incontinence:</span> <span class="field-value">{{GU_Incontinence}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Bladder Distention:</span> <span class="field-value">{{GU_BladderDistention}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Burning:</span> <span class="field-value">{{GU_Burning}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Frequency:</span> <span class="field-value">{{GU_Frequency}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Dysuria:</span> <span class="field-value">{{GU_Dysuria}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Retention:</span> <span class="field-value">{{GU_Retention}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Urgency:</span> <span class="field-value">{{GU_Urgency}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Urostomy:</span> <span class="field-value">{{GU_Urostomy}} {Yes/No}</span><br></p><br />
 
-  <p><b>Catheter:</b><br></p>
+  <p><b>Catheter</b><br></p>
   <p><span class="field-label">Type:</span> <span class="field-value">{{GU_CatheterType}}</span><br></p>
   <p><span class="field-label">Last Changed:</span> <span class="field-value">{{GU_CatheterLastChanged}}</span><br></p>
   <p><span class="field-label">Fr:</span> <span class="field-value">{{GU_CatheterFr}}</span><br></p>
   <p><span class="field-label">cc:</span> <span class="field-value">{{GU_CatheterCC}}</span><br></p><br />
 
-  <p><b>Urine:</b><br></p>
-  <p><span class="field-label">Cloudy:</span> <span class="field-value">{{Urine_Cloudy}} {true/false}</span><br></p>
-  <p><span class="field-label">Odorous:</span> <span class="field-value">{{Urine_Odorous}} {true/false}</span><br></p>
-  <p><span class="field-label">Sediment:</span> <span class="field-value">{{Urine_Sediment}} {true/false}</span><br></p>
-  <p><span class="field-label">Hematuria:</span> <span class="field-value">{{Urine_Hematuria}} {true/false}</span><br></p>
+  <p><b>Urine</b><br></p>
+  <p><span class="field-label">Cloudy:</span> <span class="field-value">{{Urine_Cloudy}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Odorous:</span> <span class="field-value">{{Urine_Odorous}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Sediment:</span> <span class="field-value">{{Urine_Sediment}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hematuria:</span> <span class="field-value">{{Urine_Hematuria}} {Yes/No}</span><br></p>
   <p><span class="field-label">Other:</span> <span class="field-value">{{Urine_Other}}</span><br></p><br />
 
-  <p><b>External Genitalia:</b><br></p>
+  <p><b>External Genitalia</b><br></p>
   <p><span class="field-label">Status:</span> <span class="field-value">{{ExternalGenitaliaStatus}} (Options: Normal, Abnormal)</span><br></p>
   <p><span class="field-label">Assessment Source:</span> <span class="field-value">{{ExternalGenitaliaSource}} (Options: Clinician, Pt/CG)</span><br></p>
 </div>
 <div class="section">
   <h2>Digestive System <span class="page-link">Page {{page_digestive}}</span></h2>
 
-  <p><span class="field-label">WNL:</span> <span class="field-value">{{Digestive_WNL}} {true/false}</span><br></p>
-  <p><span class="field-label">Nausea/Vomiting:</span> <span class="field-value">{{Digestive_NauseaVomiting}} {true/false}</span><br></p>
-  <p><span class="field-label">NPO:</span> <span class="field-value">{{Digestive_NPO}} {true/false}</span><br></p>
-  <p><span class="field-label">Reflux/Indigestion:</span> <span class="field-value">{{Digestive_RefluxIndigestion}} {true/false}</span><br></p>
-  <p><span class="field-label">Diarrhea:</span> <span class="field-value">{{Digestive_Diarrhea}} {true/false}</span><br></p>
-  <p><span class="field-label">Constipation:</span> <span class="field-value">{{Digestive_Constipation}} {true/false}</span><br></p>
-  <p><span class="field-label">Bowel Incontinence:</span> <span class="field-value">{{Digestive_BowelIncontinence}} {true/false}</span><br></p>
+  <p><span class="field-label">WNL:</span> <span class="field-value">{{Digestive_WNL}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Nausea/Vomiting:</span> <span class="field-value">{{Digestive_NauseaVomiting}} {Yes/No}</span><br></p>
+  <p><span class="field-label">NPO:</span> <span class="field-value">{{Digestive_NPO}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Reflux/Indigestion:</span> <span class="field-value">{{Digestive_RefluxIndigestion}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Diarrhea:</span> <span class="field-value">{{Digestive_Diarrhea}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Constipation:</span> <span class="field-value">{{Digestive_Constipation}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Bowel Incontinence:</span> <span class="field-value">{{Digestive_BowelIncontinence}} {Yes/No}</span><br></p>
   <p><span class="field-label">Bowel Sounds:</span> <span class="field-value">{{Digestive_BowelSounds}} (Options: Hyperactive, Hypoactive, Normal)</span><br></p>
-  <p><span class="field-label">Abdominal Girth:</span> <span class="field-value">{{Digestive_AbdGirth}} {true/false}</span><br></p> <br />
+  <p><span class="field-label">Abdominal Girth:</span> <span class="field-value">{{Digestive_AbdGirth}} {Yes/No}</span><br></p> <br />
 
-  <p><b>Last Bowel Movement:</b><br></p>
+  <p><b>Last Bowel Movement</b><br></p>
   <p><span class="field-label">Date:</span> <span class="field-value">{{Digestive_LastBMDate}}</span><br></p>
   <p><span class="field-label">Assessment Source:</span> <span class="field-value">{{Digestive_LastBMSource}} (Options: Clinician, Pt/CG)</span><br></p><br />
 
-  <p><b>Abnormal Stool:</b><br></p>
-  <p><span class="field-label">Gray:</span> <span class="field-value">{{Digestive_StoolGray}} {true/false}</span><br></p>
-  <p><span class="field-label">Tarry:</span> <span class="field-value">{{Digestive_StoolTarry}} {true/false}</span><br></p>
-  <p><span class="field-label">Fresh Blood:</span> <span class="field-value">{{Digestive_StoolFreshBlood}} {true/false}</span><br></p>
-  <p><span class="field-label">Black:</span> <span class="field-value">{{Digestive_StoolBlack}} {true/false}</span><br></p>
+  <p><b>Abnormal Stool</b><br></p>
+  <p><span class="field-label">Gray:</span> <span class="field-value">{{Digestive_StoolGray}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Tarry:</span> <span class="field-value">{{Digestive_StoolTarry}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Fresh Blood:</span> <span class="field-value">{{Digestive_StoolFreshBlood}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Black:</span> <span class="field-value">{{Digestive_StoolBlack}} {Yes/No}</span><br></p>
 
   <p><span class="field-label">Constipation Type:</span> <span class="field-value">{{Digestive_ConstipationType}} (Options: Chronic, Acute, Occasional)</span><br></p>
   <p><span class="field-label">Laxative/Enema Use:</span> <span class="field-value">{{Digestive_LaxEnemaUse}}</span><br></p>
 
-  <p><b>Hemorrhoids:</b><br></p>
-  <p><span class="field-label">Internal:</span> <span class="field-value">{{Digestive_HemorrhoidsInternal}} {true/false}</span><br></p>
-  <p><span class="field-label">External:</span> <span class="field-value">{{Digestive_HemorrhoidsExternal}} {true/false}</span><br></p><br />
+  <p><b>Hemorrhoids</b><br></p>
+  <p><span class="field-label">Internal:</span> <span class="field-value">{{Digestive_HemorrhoidsInternal}} {Yes/No}</span><br></p>
+  <p><span class="field-label">External:</span> <span class="field-value">{{Digestive_HemorrhoidsExternal}} {Yes/No}</span><br></p><br />
 
-  <p><b>Ostomy:</b><br></p>
-  <p><span class="field-label">Has Ostomy:</span> <span class="field-value">{{Digestive_OstomyPresent}} {true/false}</span><br></p>
+  <p><b>Ostomy</b><br></p>
+  <p><span class="field-label">Has Ostomy:</span> <span class="field-value">{{Digestive_OstomyPresent}} {Yes/No}</span><br></p>
   <p><span class="field-label">Ostomy Types:</span> <span class="field-value">{{Digestive_OstomyTypes}}</span><br></p>
   <p><span class="field-label">Stoma Appearance:</span> <span class="field-value">{{Digestive_StomaAppearance}}</span><br></p>
   <p><span class="field-label">Stool Appearance:</span> <span class="field-value">{{Digestive_StoolAppearance}}</span><br></p>
   <p><span class="field-label">Surrounding Skin:</span> <span class="field-value">{{Digestive_SurroundingSkin}}</span><br></p>
-  <p><span class="field-label">Skin Intact:</span> <span class="field-value">{{Digestive_OstomySkinIntact}} {true/false}</span><br></p>
+  <p><span class="field-label">Skin Intact:</span> <span class="field-value">{{Digestive_OstomySkinIntact}} {Yes/No}</span><br></p>
 </div>
 
 <div class="section">
   <h2>Dialysis Information <span class="page-link">Page {{page_dialysis}}</span></h2>
 
-  <p><span class="field-label">Currently on Dialysis:</span> <span class="field-value">{{isOnDialysis}} {true/false}</span><br></p>
-  <p><span class="field-label">Hemodialysis:</span> <span class="field-value">{{hemodialysis}} {true/false}</span><br></p>
+  <p><span class="field-label">Currently on Dialysis:</span> <span class="field-value">{{isOnDialysis}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hemodialysis:</span> <span class="field-value">{{hemodialysis}} {Yes/No}</span><br></p>
   <p><span class="field-label">AV Graft/Fistula Site:</span> <span class="field-value">{{AVGraftFistulaSite}}</span><br></p>
   <p><span class="field-label">Central Venous Catheter Access Site:</span> <span class="field-value">{{centralVenousCatheterAccessSite}}</span><br></p>
-  <p><span class="field-label">Peritoneal Dialysis:</span> <span class="field-value">{{peritonealDialysis}} {true/false}</span><br></p>
-  <p><span class="field-label">CCPD:</span> <span class="field-value">{{CCPD}} {true/false}</span><br></p>
-  <p><span class="field-label">IPD:</span> <span class="field-value">{{IPD}} {true/false}</span><br></p>
-  <p><span class="field-label">CAPD:</span> <span class="field-value">{{CAPD}} {true/false}</span><br></p>
-  <p><span class="field-label">Catheter Site Clear:</span> <span class="field-value">{{catheterSiteClear}} {true/false}</span><br></p>
+  <p><span class="field-label">Peritoneal Dialysis:</span> <span class="field-value">{{peritonealDialysis}} {Yes/No}</span><br></p>
+  <p><span class="field-label">CCPD:</span> <span class="field-value">{{CCPD}} {Yes/No}</span><br></p>
+  <p><span class="field-label">IPD:</span> <span class="field-value">{{IPD}} {Yes/No}</span><br></p>
+  <p><span class="field-label">CAPD:</span> <span class="field-value">{{CAPD}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Catheter Site Clear:</span> <span class="field-value">{{catheterSiteClear}} {Yes/No}</span><br></p>
   <p><span class="field-label">Other Dialysis Details:</span> <span class="field-value">{{other}}</span><br></p>
   <p><span class="field-label">Dialysis Center:</span> <span class="field-value">{{dialysisCenter}}</span><br></p>
   <p><span class="field-label">Phone Number:</span> <span class="field-value">{{phoneNumber}}</span><br></p>
@@ -554,83 +552,83 @@ You are a home health coding assistant. From the following discharge summary,
   <div class="section">
   <h2>M1028 - Active Diagnoses <span class="page-link">Page {{page_active_diagnoses}}</span></h2>
 
-  <p><span class="field-label">Peripheral Vascular Disease or PAD:</span> <span class="field-value">{{PeripheralVascularDiseaseOrPAD}} {true/false}</span><br></p>
-  <p><span class="field-label">Peripheral Vascular Disease - Not Assessed:</span> <span class="field-value">{{PeripheralVascularDisease_NotAssessed}} {true/false}</span><br></p>
-  <p><span class="field-label">Diabetes Mellitus:</span> <span class="field-value">{{DiabetesMellitus}} {true/false}</span><br></p>
-  <p><span class="field-label">Diabetes Mellitus - Not Assessed:</span> <span class="field-value">{{DiabetesMellitus_NotAssessed}} {true/false}</span><br></p>
-  <p><span class="field-label">None of the Above:</span> <span class="field-value">{{NoneOfTheAbove}} {true/false}</span><br></p>
-  <p><span class="field-label">None of the Above - Not Assessed:</span> <span class="field-value">{{NoneOfTheAbove_NotAssessed}} {true/false}</span><br></p>
+  <p><span class="field-label">Peripheral Vascular Disease or PAD:</span> <span class="field-value">{{PeripheralVascularDiseaseOrPAD}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Peripheral Vascular Disease - Not Assessed:</span> <span class="field-value">{{PeripheralVascularDisease_NotAssessed}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Diabetes Mellitus:</span> <span class="field-value">{{DiabetesMellitus}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Diabetes Mellitus - Not Assessed:</span> <span class="field-value">{{DiabetesMellitus_NotAssessed}} {Yes/No}</span><br></p>
+  <p><span class="field-label">None of Active Diagnoses:</span> <span class="field-value">{{NoneOfTheAbove}} {Yes/No}</span><br></p>
+  <p><span class="field-label">None of Active Diagnoses - Not Assessed:</span> <span class="field-value">{{NoneOfTheAbove_NotAssessed}} {Yes/No}</span><br></p>
 </div>
 
 <div class="section">
   <h2>M1033 - Risk for Hospitalization <span class="page-link">Page {{page_m1033}}</span></h2>
 
-  <p><span class="field-label">1 - History of falls (2 or more falls - or any fall with an injury - in the past 12 months):</span> <span class="field-value">{{RiskFallHistory}} {true/false}</span><br></p>
-  <p><span class="field-label">2 - Unintentional weight loss of a total of 10 pounds or more in the past 12 months:</span> <span class="field-value">{{RiskWeightLoss}} {true/false}</span><br></p>
-  <p><span class="field-label">3 - Multiple hospitalizations (2 or more) in the past 6 months:</span> <span class="field-value">{{RiskMultipleHosp}} {true/false}</span><br></p>
-  <p><span class="field-label">4 - Multiple emergency department visits (2 or more) in the past 6 months:</span> <span class="field-value">{{RiskEDVisits}} {true/false}</span><br></p>
-  <p><span class="field-label">5 - Decline in mental, emotional, or behavioral status in the past 3 months:</span> <span class="field-value">{{RiskMentalDecline}} {true/false}</span><br></p>
-  <p><span class="field-label">6 - Difficulty complying with medical instructions (medications, diet, exercise) in past 3 months:</span> <span class="field-value">{{RiskComplianceIssues}} {true/false}</span><br></p>
-  <p><span class="field-label">7 - Currently taking 5 or more medications:</span> <span class="field-value">{{RiskPolypharmacy}} {true/false}</span><br></p>
-  <p><span class="field-label">8 - Currently reports exhaustion:</span> <span class="field-value">{{RiskExhaustion}} {true/false}</span><br></p>
-  <p><span class="field-label">9 - Other risk(s) not listed in 1-8:</span> <span class="field-value">{{RiskOther}} {true/false}</span><br></p>
-  <p><span class="field-label">10 - None of the above:</span> <span class="field-value">{{RiskNone}} {true/false}</span><br></p>
+  <p><span class="field-label">1 - History of falls (2 or more falls - or any fall with an injury - in the past 12 months):</span> <span class="field-value">{{RiskFallHistory}} {Yes/No}</span><br></p>
+  <p><span class="field-label">2 - Unintentional weight loss of a total of 10 pounds or more in the past 12 months:</span> <span class="field-value">{{RiskWeightLoss}} {Yes/No}</span><br></p>
+  <p><span class="field-label">3 - Multiple hospitalizations (2 or more) in the past 6 months:</span> <span class="field-value">{{RiskMultipleHosp}} {Yes/No}</span><br></p>
+  <p><span class="field-label">4 - Multiple emergency department visits (2 or more) in the past 6 months:</span> <span class="field-value">{{RiskEDVisits}} {Yes/No}</span><br></p>
+  <p><span class="field-label">5 - Decline in mental, emotional, or behavioral status in the past 3 months:</span> <span class="field-value">{{RiskMentalDecline}} {Yes/No}</span><br></p>
+  <p><span class="field-label">6 - Difficulty complying with medical instructions (medications, diet, exercise) in past 3 months:</span> <span class="field-value">{{RiskComplianceIssues}} {Yes/No}</span><br></p>
+  <p><span class="field-label">7 - Currently taking 5 or more medications:</span> <span class="field-value">{{RiskPolypharmacy}} {Yes/No}</span><br></p>
+  <p><span class="field-label">8 - Currently reports exhaustion:</span> <span class="field-value">{{RiskExhaustion}} {Yes/No}</span><br></p>
+  <p><span class="field-label">9 - Other risk(s) not listed in 1-8:</span> <span class="field-value">{{RiskOther}} {Yes/No}</span><br></p>
+  <p><span class="field-label">10 - None of the Risk:</span> <span class="field-value">{{RiskNone}} {Yes/No}</span><br></p>
 </div>
 
 <div class="section">
   <h2>Swallowing and Nutritional Status <span class="page-link">Page {{page_nutrition}}</span></h2>
 
-  <p><b>Nutritional Health Screening:</b><br></p>
-  <p><span class="field-label">Lost more than 10 lbs in the last 3 months (without reason):</span> <span class="field-value">{{NutritionWeightLoss}} {true/false}</span><br></p>
-  <p><span class="field-label">Changed food type/amount due to illness or condition:</span> <span class="field-value">{{NutritionChangeDueToIllness}} {true/false}</span><br></p>
-  <p><span class="field-label">Has open decubitus, ulcer, burn or wound:</span> <span class="field-value">{{NutritionOpenWound}} {true/false}</span><br></p>
-  <p><span class="field-label">Eats fewer than 2 meals a day:</span> <span class="field-value">{{NutritionFewMeals}} {true/false}</span><br></p>
-  <p><span class="field-label">Tooth/mouth problem making it hard to eat:</span> <span class="field-value">{{NutritionOralProblems}} {true/false}</span><br></p>
-  <p><span class="field-label">Has 3 or more drinks of alcohol almost every day:</span> <span class="field-value">{{NutritionAlcohol}} {true/false}</span><br></p>
-  <p><span class="field-label">Does not always have enough money to buy food:</span> <span class="field-value">{{NutritionNoMoney}} {true/false}</span><br></p>
-  <p><span class="field-label">Eats few fruits, vegetables, or milk products:</span> <span class="field-value">{{NutritionFewFruitsVeg}} {true/false}</span><br></p>
-  <p><span class="field-label">Eats alone most of the time:</span> <span class="field-value">{{NutritionEatsAlone}} {true/false}</span><br></p>
-  <p><span class="field-label">Takes 3 or more prescribed or OTC medications a day:</span> <span class="field-value">{{NutritionPolyMed}} {true/false}</span><br></p>
-  <p><span class="field-label">Physically unable to cook/feed self and has no caregiver:</span> <span class="field-value">{{NutritionUnableCookFeed}} {true/false}</span><br></p>
-  <p><span class="field-label">Frequently has diarrhea or constipation:</span> <span class="field-value">{{NutritionDiarrheaConstipation}} {true/false}</span><br></p><br />
+  <p><b>Nutritional Health Screening</b><br></p>
+  <p><span class="field-label">Lost more than 10 lbs in the last 3 months (without reason):</span> <span class="field-value">{{NutritionWeightLoss}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Changed food type/amount due to illness or condition:</span> <span class="field-value">{{NutritionChangeDueToIllness}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Has open decubitus, ulcer, burn or wound:</span> <span class="field-value">{{NutritionOpenWound}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Eats fewer than 2 meals a day:</span> <span class="field-value">{{NutritionFewMeals}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Tooth/mouth problem making it hard to eat:</span> <span class="field-value">{{NutritionOralProblems}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Has 3 or more drinks of alcohol almost every day:</span> <span class="field-value">{{NutritionAlcohol}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Does not always have enough money to buy food:</span> <span class="field-value">{{NutritionNoMoney}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Eats few fruits, vegetables, or milk products:</span> <span class="field-value">{{NutritionFewFruitsVeg}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Eats alone most of the time:</span> <span class="field-value">{{NutritionEatsAlone}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Takes 3 or more prescribed or OTC medications a day:</span> <span class="field-value">{{NutritionPolyMed}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Physically unable to cook/feed self and has no caregiver:</span> <span class="field-value">{{NutritionUnableCookFeed}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Frequently has diarrhea or constipation:</span> <span class="field-value">{{NutritionDiarrheaConstipation}} {Yes/No}</span><br></p><br />
 
-  <p><b>Nutritional Approaches:</b><br></p>
-  <p><span class="field-label">Parenteral/IV feeding:</span> <span class="field-value">{{NutritionParenteral}} {true/false}</span><br></p>
-  <p><span class="field-label">Feeding tube:</span> <span class="field-value">{{NutritionFeedingTube}} {true/false}</span><br></p>
-  <p><span class="field-label">Mechanically altered diet:</span> <span class="field-value">{{NutritionMechanicalDiet}} {true/false}</span><br></p>
-  <p><span class="field-label">Therapeutic diet:</span> <span class="field-value">{{NutritionTherapeuticDiet}} {true/false}</span><br></p>
-  <p><span class="field-label">None of the above:</span> <span class="field-value">{{NutritionNone}} {true/false}</span><br></p>
-  <p><span class="field-label">Not Assessed/No Information:</span> <span class="field-value">{{NutritionNotAssessed}} {true/false}</span><br></p><br />
+  <p><b>Nutritional Approaches</b><br></p>
+  <p><span class="field-label">Parenteral/IV feeding:</span> <span class="field-value">{{NutritionParenteral}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Feeding tube:</span> <span class="field-value">{{NutritionFeedingTube}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Mechanically altered diet:</span> <span class="field-value">{{NutritionMechanicalDiet}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Therapeutic diet:</span> <span class="field-value">{{NutritionTherapeuticDiet}} {Yes/No}</span><br></p>
+  <p><span class="field-label">None of Nutritionakl Approaches:</span> <span class="field-value">{{NutritionNone}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Not Assessed/No Information:</span> <span class="field-value">{{NutritionNotAssessed}} {Yes/No}</span><br></p><br />
 
-  <p><b>Physician Diet Orders:</b><br></p>
-  <p><span class="field-label">Sodium:</span> <span class="field-value">{{DietSodium}} {true/false}</span><br></p>
-  <p><span class="field-label">No Added Salt:</span> <span class="field-value">{{DietNoAddedSalt}} {true/false}</span><br></p>
-  <p><span class="field-label">Calorie ADA Diet:</span> <span class="field-value">{{DietCalorieADA}} {true/false}</span><br></p>
-  <p><span class="field-label">Regular:</span> <span class="field-value">{{DietRegular}} {true/false}</span><br></p>
-  <p><span class="field-label">High Protein:</span> <span class="field-value">{{DietHighProtein}} {true/false}</span><br></p>
-  <p><span class="field-label">Low Protein:</span> <span class="field-value">{{DietLowProtein}} {true/false}</span><br></p>
-  <p><span class="field-label">Carbohydrate Low:</span> <span class="field-value">{{DietCarbLow}} {true/false}</span><br></p>
-  <p><span class="field-label">Carbohydrate High:</span> <span class="field-value">{{DietCarbHigh}} {true/false}</span><br></p>
-  <p><span class="field-label">Mechanical Soft:</span> <span class="field-value">{{DietMechanicalSoft}} {true/false}</span><br></p>
-  <p><span class="field-label">High Fiber:</span> <span class="field-value">{{DietHighFiber}} {true/false}</span><br></p>
-  <p><span class="field-label">Supplement:</span> <span class="field-value">{{DietSupplement}} {true/false}</span><br></p>
-  <p><span class="field-label">Renal Diet:</span> <span class="field-value">{{DietRenal}} {true/false}</span><br></p>
-  <p><span class="field-label">Coumadin Diet:</span> <span class="field-value">{{DietCoumadin}} {true/false}</span><br></p>
-  <p><span class="field-label">Fluid Restriction:</span> <span class="field-value">{{DietFluidRestriction}} {true/false}</span><br></p>
-  <p><span class="field-label">Other:</span> <span class="field-value">{{DietOther}} {true/false}</span><br></p>
-  <p><span class="field-label">No Concentrated Sweets:</span> <span class="field-value">{{DietNoSweets}} {true/false}</span><br></p>
-  <p><span class="field-label">Heart Healthy:</span> <span class="field-value">{{DietHeartHealthy}} {true/false}</span><br></p>
-  <p><span class="field-label">Low Cholesterol:</span> <span class="field-value">{{DietLowCholesterol}} {true/false}</span><br></p>
-  <p><span class="field-label">Low Fat:</span> <span class="field-value">{{DietLowFat}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral Nutrition:</span> <span class="field-value">{{DietEnteralNutrition}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral Pump:</span> <span class="field-value">{{DietEnteralPump}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral Gravity:</span> <span class="field-value">{{DietEnteralGravity}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral PEG:</span> <span class="field-value">{{DietEnteralPEG}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral NG:</span> <span class="field-value">{{DietEnteralNG}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral Dobhoff:</span> <span class="field-value">{{DietEnteralDobhoff}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral Continuous:</span> <span class="field-value">{{DietEnteralContinuous}} {true/false}</span><br></p>
-  <p><span class="field-label">Enteral Bolus:</span> <span class="field-value">{{DietEnteralBolus}} {true/false}</span><br></p>
-  <p><span class="field-label">TPN:</span> <span class="field-value">{{DietTPN}} {true/false}</span><br></p>
+  <p><b>Physician Diet Orders</b><br></p>
+  <p><span class="field-label">Sodium:</span> <span class="field-value">{{DietSodium}} {Yes/No}</span><br></p>
+  <p><span class="field-label">No Added Salt:</span> <span class="field-value">{{DietNoAddedSalt}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Calorie ADA Diet:</span> <span class="field-value">{{DietCalorieADA}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Regular:</span> <span class="field-value">{{DietRegular}} {Yes/No}</span><br></p>
+  <p><span class="field-label">High Protein:</span> <span class="field-value">{{DietHighProtein}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Low Protein:</span> <span class="field-value">{{DietLowProtein}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Carbohydrate Low:</span> <span class="field-value">{{DietCarbLow}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Carbohydrate High:</span> <span class="field-value">{{DietCarbHigh}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Mechanical Soft:</span> <span class="field-value">{{DietMechanicalSoft}} {Yes/No}</span><br></p>
+  <p><span class="field-label">High Fiber:</span> <span class="field-value">{{DietHighFiber}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Supplement:</span> <span class="field-value">{{DietSupplement}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Renal Diet:</span> <span class="field-value">{{DietRenal}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Coumadin Diet:</span> <span class="field-value">{{DietCoumadin}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Fluid Restriction:</span> <span class="field-value">{{DietFluidRestriction}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Other:</span> <span class="field-value">{{DietOther}} {Yes/No}</span><br></p>
+  <p><span class="field-label">No Concentrated Sweets:</span> <span class="field-value">{{DietNoSweets}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Heart Healthy:</span> <span class="field-value">{{DietHeartHealthy}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Low Cholesterol:</span> <span class="field-value">{{DietLowCholesterol}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Low Fat:</span> <span class="field-value">{{DietLowFat}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral Nutrition:</span> <span class="field-value">{{DietEnteralNutrition}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral Pump:</span> <span class="field-value">{{DietEnteralPump}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral Gravity:</span> <span class="field-value">{{DietEnteralGravity}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral PEG:</span> <span class="field-value">{{DietEnteralPEG}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral NG:</span> <span class="field-value">{{DietEnteralNG}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral Dobhoff:</span> <span class="field-value">{{DietEnteralDobhoff}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral Continuous:</span> <span class="field-value">{{DietEnteralContinuous}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Enteral Bolus:</span> <span class="field-value">{{DietEnteralBolus}} {Yes/No}</span><br></p>
+  <p><span class="field-label">TPN:</span> <span class="field-value">{{DietTPN}} {Yes/No}</span><br></p>
 </div>
 
 <div class="section">
@@ -643,75 +641,74 @@ You are a home health coding assistant. From the following discharge summary,
   <div class="section">
   <h2>IV Access and High-Risk Medications <span class="page-link">Page {{page_iv_access}}</span></h2>
 
-  <p><b>IV Access:</b><br></p>
-  <p><span class="field-label">Has IV Access - Yes:</span> <span class="field-value">{{HasIVAccessYes}} {true/false}</span><br></p>
-  <p><span class="field-label">Has IV Access - No:</span> <span class="field-value">{{HasIVAccessNo}} {true/false}</span><br></p>
+  <p><b>IV Access</b><br></p>
+  <p><span class="field-label">Has IV Access:</span> <span class="field-value">{{HasIVAccess}} {Yes/No}</span><br></p>
   <p><span class="field-label">Type:</span> <span class="field-value">{{IVType}}</span><br></p>
   <p><span class="field-label">Date of Insertion:</span> <span class="field-value">{{IVDateOfInsertion}}</span><br></p>
   <p><span class="field-label">Date of Last Dressing Change:</span> <span class="field-value">{{IVDateOfLastDressingChange}}</span><br></p><br />
 
-  <p><b>High-Risk Drug Classes - Is Taking:</b><br></p>
-  <p><span class="field-label">Antipsychotic:</span> <span class="field-value">{{IsTakingAntipsychotic}} {true/false}</span><br></p>
-  <p><span class="field-label">Anticoagulant:</span> <span class="field-value">{{IsTakingAnticoagulant}} {true/false}</span><br></p>
-  <p><span class="field-label">Antibiotic:</span> <span class="field-value">{{IsTakingAntibiotic}} {true/false}</span><br></p>
-  <p><span class="field-label">Opioid:</span> <span class="field-value">{{IsTakingOpioid}} {true/false}</span><br></p>
-  <p><span class="field-label">Antiplatelet:</span> <span class="field-value">{{IsTakingAntiplatelet}} {true/false}</span><br></p>
-  <p><span class="field-label">Hypoglycemic:</span> <span class="field-value">{{IsTakingHypoglycemic}} {true/false}</span><br></p>
-  <p><span class="field-label">None of the Above:</span> <span class="field-value">{{IsTakingNoneOfAbove}} {true/false}</span><br></p>
+  <p><b>High-Risk Drug Classes - Is Taking</b><br></p>
+  <p><span class="field-label">Antipsychotic:</span> <span class="field-value">{{IsTakingAntipsychotic}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Anticoagulant:</span> <span class="field-value">{{IsTakingAnticoagulant}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Antibiotic:</span> <span class="field-value">{{IsTakingAntibiotic}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Opioid:</span> <span class="field-value">{{IsTakingOpioid}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Antiplatelet:</span> <span class="field-value">{{IsTakingAntiplatelet}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hypoglycemic:</span> <span class="field-value">{{IsTakingHypoglycemic}} {Yes/No}</span><br></p>
+  <p><span class="field-label">None of High Risk Drug Classes:</span> <span class="field-value">{{IsTakingNoneOfAbove}} {Yes/No}</span><br></p>
 </div>
 <div class="section">
   <h2>Special Treatments, Procedures, and Programs <span class="page-link">Page {{page_special_treatments}}</span></h2>
 
-  <p><b>Cancer Treatments:</b><br></p>
-  <p><span class="field-label">Chemotherapy:</span> <span class="field-value">{{Chemo}} {true/false}</span><br></p>
-  <p><span class="field-label">IV:</span> <span class="field-value">{{ChemoIV}} {true/false}</span><br></p>
-  <p><span class="field-label">Oral:</span> <span class="field-value">{{ChemoOral}} {true/false}</span><br></p>
-  <p><span class="field-label">Other:</span> <span class="field-value">{{ChemoOther}} {true/false}</span><br></p>
+  <p><b>Cancer Treatments</b><br></p>
+  <p><span class="field-label">Chemotherapy:</span> <span class="field-value">{{Chemo}} {Yes/No}</span><br></p>
+  <p><span class="field-label">IV:</span> <span class="field-value">{{ChemoIV}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Oral:</span> <span class="field-value">{{ChemoOral}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Other:</span> <span class="field-value">{{ChemoOther}} {Yes/No}</span><br></p>
 
-  <p><span class="field-label">Radiation:</span> <span class="field-value">{{Radiation}} {true/false}</span><br></p><br />
+  <p><span class="field-label">Radiation:</span> <span class="field-value">{{Radiation}} {Yes/No}</span><br></p><br />
 
-  <p><b>Respiratory Therapies:</b><br></p>
-  <p><span class="field-label">Oxygen Therapy:</span> <span class="field-value">{{OxygenTherapy}} {true/false}</span><br></p>
-  <p><span class="field-label">Continuous:</span> <span class="field-value">{{OxygenContinuous}} {true/false}</span><br></p>
-  <p><span class="field-label">Intermittent:</span> <span class="field-value">{{OxygenIntermittent}} {true/false}</span><br></p>
-  <p><span class="field-label">High Concentration:</span> <span class="field-value">{{OxygenHighConcentration}} {true/false}</span><br></p><br />
+  <p><b>Respiratory Therapies</b><br></p>
+  <p><span class="field-label">Oxygen Therapy:</span> <span class="field-value">{{OxygenTherapy}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Continuous:</span> <span class="field-value">{{OxygenContinuous}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Intermittent:</span> <span class="field-value">{{OxygenIntermittent}} {Yes/No}</span><br></p>
+  <p><span class="field-label">High Concentration:</span> <span class="field-value">{{OxygenHighConcentration}} {Yes/No}</span><br></p><br />
 
-  <p><b>Suctioning:</b><br></p>
-  <p><span class="field-label">Suctioning:</span> <span class="field-value">{{Suctioning}} {true/false}</span><br></p>
-  <p><span class="field-label">Scheduled:</span> <span class="field-value">{{SuctioningScheduled}} {true/false}</span><br></p>
-  <p><span class="field-label">As Needed:</span> <span class="field-value">{{SuctioningAsNeeded}} {true/false}</span><br></p>
+  <p><b>Suctioning</b><br></p>
+  <p><span class="field-label">Suctioning:</span> <span class="field-value">{{Suctioning}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Scheduled:</span> <span class="field-value">{{SuctioningScheduled}} {Yes/No}</span><br></p>
+  <p><span class="field-label">As Needed:</span> <span class="field-value">{{SuctioningAsNeeded}} {Yes/No}</span><br></p>
 
-  <p><span class="field-label">Tracheostomy Care:</span> <span class="field-value">{{TracheostomyCare}} {true/false}</span><br></p>
-  <p><span class="field-label">Invasive Mechanical Ventilator:</span> <span class="field-value">{{InvasiveVentilator}} {true/false}</span><br></p><br />
+  <p><span class="field-label">Tracheostomy Care:</span> <span class="field-value">{{TracheostomyCare}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Invasive Mechanical Ventilator:</span> <span class="field-value">{{InvasiveVentilator}} {Yes/No}</span><br></p><br />
 
-  <p><b>Non-Invasive Mechanical Ventilator:</b><br></p>
-  <p><span class="field-label">Non-Invasive:</span> <span class="field-value">{{NonInvasive}} {true/false}</span><br></p>
-  <p><span class="field-label">BiPAP:</span> <span class="field-value">{{BiPAP}} {true/false}</span><br></p>
-  <p><span class="field-label">CPAP:</span> <span class="field-value">{{CPAP}} {true/false}</span><br></p><br />
+  <p><b>Non-Invasive Mechanical Ventilator</b><br></p>
+  <p><span class="field-label">Non-Invasive:</span> <span class="field-value">{{NonInvasive}} {Yes/No}</span><br></p>
+  <p><span class="field-label">BiPAP:</span> <span class="field-value">{{BiPAP}} {Yes/No}</span><br></p>
+  <p><span class="field-label">CPAP:</span> <span class="field-value">{{CPAP}} {Yes/No}</span><br></p><br />
 
-  <p><b>Other Medications:</b><br></p>
-  <p><span class="field-label">IV Medications:</span> <span class="field-value">{{OtherIVMedications}} {true/false}</span><br></p>
-  <p><span class="field-label">Vasoactive Medications:</span> <span class="field-value">{{OtherVasoactive}} {true/false}</span><br></p>
-  <p><span class="field-label">Antibiotics:</span> <span class="field-value">{{OtherAntibiotics}} {true/false}</span><br></p>
-  <p><span class="field-label">Anticoagulation:</span> <span class="field-value">{{OtherAnticoagulation}} {true/false}</span><br></p>
-  <p><span class="field-label">Other:</span> <span class="field-value">{{OtherOther}} {true/false}</span><br></p>
+  <p><b>Other Medications</b><br></p>
+  <p><span class="field-label">IV Medications:</span> <span class="field-value">{{OtherIVMedications}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Vasoactive Medications:</span> <span class="field-value">{{OtherVasoactive}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Antibiotics:</span> <span class="field-value">{{OtherAntibiotics}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Anticoagulation:</span> <span class="field-value">{{OtherAnticoagulation}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Other:</span> <span class="field-value">{{OtherOther}} {Yes/No}</span><br></p>
 
-  <p><span class="field-label">Transfusions:</span> <span class="field-value">{{Transfusions}} {true/false}</span><br></p><br />
+  <p><span class="field-label">Transfusions:</span> <span class="field-value">{{Transfusions}} {Yes/No}</span><br></p><br />
 
-  <p><b>Dialysis:</b><br></p>
-  <p><span class="field-label">Dialysis:</span> <span class="field-value">{{SpecialDialysis}} {true/false}</span><br></p>
-  <p><span class="field-label">Hemodialysis:</span> <span class="field-value">{{SpecialHemodialysis}} {true/false}</span><br></p>
-  <p><span class="field-label">Peritoneal Dialysis:</span> <span class="field-value">{{SpecialPeritonealDialysis}} {true/false}</span><br></p><br />
+  <p><b>Dialysis</b><br></p>
+  <p><span class="field-label">Dialysis:</span> <span class="field-value">{{SpecialDialysis}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Hemodialysis:</span> <span class="field-value">{{SpecialHemodialysis}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Peritoneal Dialysis:</span> <span class="field-value">{{SpecialPeritonealDialysis}} {Yes/No}</span><br></p><br />
 
-  <p><b>IV Access:</b><br></p>
-  <p><span class="field-label">IV Access:</span> <span class="field-value">{{SpecialIVAccess}} {true/false}</span><br></p>
-  <p><span class="field-label">Peripheral:</span> <span class="field-value">{{SpecialIVPeripheral}} {true/false}</span><br></p>
-  <p><span class="field-label">Mid Line:</span> <span class="field-value">{{SpecialIVMidLine}} {true/false}</span><br></p>
-  <p><span class="field-label">Central:</span> <span class="field-value">{{SpecialIVCentral}} {true/false}</span><br></p><br />
+  <p><b>IV Access</b><br></p>
+  <p><span class="field-label">IV Access:</span> <span class="field-value">{{SpecialIVAccess}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Peripheral:</span> <span class="field-value">{{SpecialIVPeripheral}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Mid Line:</span> <span class="field-value">{{SpecialIVMidLine}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Central:</span> <span class="field-value">{{SpecialIVCentral}} {Yes/No}</span><br></p><br />
 
-  <p><b>None of the Above:</b><br></p>
-  <p><span class="field-label">None of the Above:</span> <span class="field-value">{{SpecialNoneOfAbove}} {true/false}</span><br></p>
-  <p><span class="field-label">Not Assessed/No Info:</span> <span class="field-value">{{SpecialNotAssessed}} {true/false}</span><br></p>
+ 
+  <p><span class="field-label">None of Special Treatments:</span> <span class="field-value">{{SpecialNoneOfAbove}} {Yes/No}</span><br></p>
+  <p><span class="field-label">Not Assessed/No Info:</span> <span class="field-value">{{SpecialNotAssessed}} {Yes/No}</span><br></p>
 </div>
   
 </body>

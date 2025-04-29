@@ -1,27 +1,77 @@
-const User = require("../Models/User");
+// controllers/authController.js
 const bcrypt = require("bcryptjs");
+const { poolConnect, sql, pool } = require("../config/db.js");
 
-exports.loginUser = async (req, res) => {
-  const { EmailId, Password } = req.body;
+exports.registerUser = async (req, res) => {
+  const { email, password, isTermsAccepted, isAnonymized, emailNotifications } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({ error: "Email and password are required." });
+  }
 
   try {
-    const user = await User.findOne({
-      EmailId: new RegExp("^" + EmailId + "$", "i"),
-    });
-    if (!user)
-      return res
-        .status(401)
-        .json({ success: false, message: "User not found" });
+    await poolConnect;
 
-    const isMatch = await bcrypt.compare(Password, user.Password);
-    if (!isMatch)
-      return res
-        .status(401)
-        .json({ success: false, message: "Invalid credentials" });
+    const existingUser = await pool.request()
+      .input("email", sql.NVarChar(255), email)
+      .query("SELECT * FROM Users WHERE Email = @email");
 
-    res.json({ success: true, message: "Login successful" });
-  } catch (error) {
-    console.error("Server Error:", error);
-    res.status(500).json({ success: false, message: "Server error" });
+    if (existingUser.recordset.length > 0) {
+      return res.status(409).json({ error: "User already exists." });
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    await pool.request()
+      .input("email", sql.NVarChar(255), email)
+      .input("passwordHash", sql.NVarChar(255), hashedPassword)
+      .input("authProvider", sql.NVarChar(50), "local")
+      .query(`
+        INSERT INTO Users (
+          Email, PasswordHash, AuthProvider,
+          CreatedOn, ModifiedOn
+        )
+        VALUES (
+          @email, @passwordHash, @authProvider,
+          GETDATE(), GETDATE()
+        )
+      `);
+
+    res.status(201).json({ message: "User registered successfully" });
+  } catch (err) {
+    console.error("DB Error:", err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+exports.loginUser = async (req, res) => {
+  const { email, password } = req.body;
+
+  if (!email || !password) {
+    return res.status(400).json({ error: "Email and password are required." });
+  }
+
+  try {
+    await poolConnect;
+
+    const result = await pool.request()
+      .input("email", sql.NVarChar(255), email)
+      .query("SELECT * FROM Users WHERE Email = @email");
+
+    const user = result.recordset[0];
+
+    if (!user) {
+      return res.status(401).json({ error: "User not found." });
+    }
+
+    const isMatch = await bcrypt.compare(password, user.PasswordHash);
+    if (!isMatch) {
+      return res.status(401).json({ error: "Invalid password." });
+    }
+
+    res.status(200).json({ message: "Login successful", email: user.Email });
+  } catch (err) {
+    console.error("Login error:", err);
+    res.status(500).json({ error: "Internal server error." });
   }
 };

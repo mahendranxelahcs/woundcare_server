@@ -1,1 +1,1 @@
-Perform a detailed analysis of this wound and provide the output in HTML format.
+Analyze the uploaded wound image and provide a detailed wound assessment along with Hyperbaric Oxygen Therapy (HBOT) recommendations. Return the output in HTML format. Do not display the image or mention anything about the image not being shown. Place the disclaimer at the end of the HTML content, not at the beginning.

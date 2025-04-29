@@ -4,6 +4,7 @@ const cors = require("cors");
 const fs = require("fs");
 const connectDB = require("./config/db");
 const path = require("path");
+const intakeRoutes = require("./routes/intakeRoutes");
 
 dotenv.config();
 //connectDB();
@@ -29,7 +30,6 @@ app.get("/", (req, res) => {
 app.get('/api/test', (req, res) => {
   res.json({ message: 'Backend is working properly 🎯' });
 });
-
 // <!-- Prod Move -->
 // app.use(
 //   "/uploads",
@@ -43,12 +43,20 @@ app.use(
     "/uploads",
     express.static(path.join(__dirname, "uploads"))
   );
+  app.use(
+    "/oasisuploads",
+    express.static(path.join(__dirname, "uploads"))
+  );
 // Routes
 app.use("/api", require("./routes/authRoutes"));
 app.use("/api", require("./routes/pdfRoutes"));
+app.use("/api", require("./routes/oasisRoutes"));
 app.use("/api", require("./routes/woundRoutes"));
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+
+app.use("/api/intake", intakeRoutes);
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, '0.0.0.0', () => {
+  console.log("Server running on port 5000");
 });
