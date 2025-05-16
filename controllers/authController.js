@@ -46,6 +46,7 @@ exports.registerUser = async (req, res) => {
 
 exports.loginUser = async (req, res) => {
   const { email, password } = req.body;
+  console.log("Login API Clicked");
 
   if (!email || !password) {
     return res.status(400).json({ error: "Email and password are required." });
@@ -53,7 +54,7 @@ exports.loginUser = async (req, res) => {
 
   try {
     await poolConnect;
-
+    console.log("Login with email: ", email);
     const result = await pool.request()
       .input("email", sql.NVarChar(255), email)
       .query("SELECT * FROM Users WHERE Email = @email");
