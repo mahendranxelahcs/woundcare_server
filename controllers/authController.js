@@ -62,6 +62,7 @@ exports.loginUser = async (req, res) => {
     const user = result.recordset[0];
 
     if (!user) {
+      console.log("User Not Exisitng !");
       return res.status(401).json({ error: "User not found." });
     }
 
